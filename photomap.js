@@ -20,9 +20,9 @@ function createPhotoMap () {
   var map = L.map('map').setView([36.82, -76.17], 11);
   
   // create basemap object. See examples at https://leaflet-extras.github.io/leaflet-providers/preview/
-  var basemap = L.tileLayer('https://api.thunderforest.com/atlas/{z}/{x}/{y}{r}.png', {
+  var basemap = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
   	maxZoom: 16,
-  	attribution: 'USGS'
+  	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team</a> hosted by <a href="https://openstreetmap.fr/" target="_blank">OpenStreetMap France</a>'
   }).addTo(map);
   
   // use Papa Parse (papaparse.com) to get the Google Sheets CSV
