@@ -40,7 +40,8 @@ function createPhotoMap () {
       // go through each row of the CSV to save the values to a marker
       for (row in csv.data) {
         place = csv.data[row];
-        marker = L.marker([place.lat, place.long])
+        console.log()
+          marker = L.marker([place.lat, place.long])
           .bindTooltip(place.name, {permanent: true}) // show labels by default
           .addTo(markersLayer);
         marker.properties = {
