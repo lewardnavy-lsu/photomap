@@ -20,7 +20,7 @@ function createPhotoMap () {
   var map = L.map('map').setView([36.82, -76.17], 11);
   
   // create basemap object. See examples at https://leaflet-extras.github.io/leaflet-providers/preview/
-  var basemap = L.tileLayer('https://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+  var basemap = L.tileLayer('https://tile.openstreetmap.bzh/ca/{z}/{x}/{y}.png', {
   	maxZoom: 16,
   	attribution: 'USGS'
   }).addTo(map);
